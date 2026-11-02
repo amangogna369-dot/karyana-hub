@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karayana Hub | Your neighbourhood kirana shop</title>
+<meta name="description" content="Karayana Hub is a neighbourhood kirana shop for snacks, staples, tea, oils, toiletries and cleaning supplies. Browse the shelves, build your list and send it on WhatsApp.">
+<meta name="theme-color" content="#1d5a37">
+<meta property="og:title" content="Karayana Hub | Your neighbourhood kirana shop">
+<meta property="og:description" content="Browse the shelves, build your list and send it to the shop in one tap.">
+<meta property="og:image" content="images/shop/front.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-rupee" viewBox="0 0 24 24"><path d="M6 3h12M6 8h12M6 13l8.5 8M6 13h3"/><path d="M9 13c6.667 0 6.667-10 0-10"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Karayana Hub, home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M12 9v22M12 20l10-11M12 20l11 11" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="30" cy="12" r="3.2" fill="#f2b705"/></svg>
+      <span>Karayana Hub</span>
+    </a>
+
+    <nav id="nav" class="nav-links" aria-label="Main">
+      <a href="#shelves">Shelves</a>
+      <a href="#how">How it works</a>
+      <a href="#shop">Inside the shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="list-btn" id="listBtn" type="button" aria-haspopup="dialog">
+        <svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>
+        <span class="lb-text">My list</span>
+        <span class="badge" id="badge" aria-hidden="true">0</span>
+        <span class="sr" id="badgeSr">My list, 0 items</span>
+      </button>
+      <button class="menu-btn" id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Neighbourhood kirana shop</p>
+        <h1>Everything for your kitchen and home, <span class="hl">under one roof.</span></h1>
+        <p class="lead">Snacks, staples, tea, oils, toiletries and cleaning supplies. Browse the shelves from your phone, build a list and send it to the shop in one tap.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="#shelves">Browse the shelves <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost btn-lg" href="#contact">Ask about an item</a>
+        </div>
+        <ul class="hero-points" aria-label="Highlights">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Pickup or home delivery</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Price confirmed before you pay</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="hero-photo">
+          <img src="images/shop/front.jpg" alt="Inside Karayana Hub: shelves of biscuits, snacks, oils and groceries under a ceiling fan" fetchpriority="high" width="1200" height="675">
+        </div>
+        <figure class="sticker s1"><img src="images/products/maggi.jpg" alt="" width="300" height="480"><figcaption>Maggi</figcaption></figure>
+        <figure class="sticker s2"><img src="images/products/parle.jpg" alt="" width="480" height="279"><figcaption>Parle-G</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="strip" aria-label="Why shop with us">
+    <div class="wrap strip-grid">
+      <div><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><b>Genuine brands</b><span>On every shelf</span></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-rupee"/></svg><b>Fair prices</b><span>Confirmed up front</span></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><b>WhatsApp enquiry</b><span>Send your list in a tap</span></div>
+      <div><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg><b>Pickup or delivery</b><span>Your choice</span></div>
+    </div>
+  </section>
+
+  <!-- SHELVES -->
+  <section id="shelves" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Step 1</p>
+        <h2>Browse the shelves</h2>
+        <p class="sub">Tap <b>Add</b> on anything you need. We will confirm stock and price when you send your list. Items without a photo are listed by name only.</p>
+      </div>
+
+      <div class="toolbar" id="toolbar">
+        <div class="search">
+          <svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="q" type="search" placeholder="Search items or brands" aria-label="Search items or brands" autocomplete="off" enterkeyhint="search">
+          <button class="clear" id="qClear" type="button" aria-label="Clear search" hidden><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+      </div>
+
+      <p class="result-count" id="count" role="status" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+
+      <div class="empty" id="none" hidden>
+        <p><b>No items match “<span id="noneQ"></span>”.</b></p>
+        <p>Try another word, or tell us what you need in the enquiry form and we will check.</p>
+        <div class="empty-cta"><button class="btn btn-ghost" type="button" id="resetFilters">Clear search</button><a class="btn btn-primary" href="#contact">Ask the shop</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section alt">
+    <div class="wrap">
+      <div class="sec-head center">
+        <p class="eyebrow">Simple</p>
+        <h2>How it works</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="num">1</span><h3>Pick your items</h3><p>Browse the shelves and add what you need to your list.</p></li>
+        <li class="step"><span class="num">2</span><h3>Send your list</h3><p>Enter your name and phone number, then send the enquiry on WhatsApp.</p></li>
+        <li class="step"><span class="num">3</span><h3>We confirm</h3><p>We check stock and price, then you pick up from the shop or get it delivered.</p></li>
+      </ol>
+      <p class="center-cta"><a class="btn btn-primary" href="#shelves">Start your list</a></p>
+    </div>
+  </section>
+
+  <!-- INSIDE THE SHOP -->
+  <section id="shop" class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Take a look</p>
+        <h2>Inside the shop</h2>
+        <p class="sub">Real photos of our aisles. Tap a photo to enlarge it.</p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section alt">
+    <div class="wrap about">
+      <div class="about-photo"><img src="images/shop/shelfA.jpg" alt="Karayana Hub shelves stocked with oils, detergents, snacks and soaps" loading="lazy" width="675" height="1200"></div>
+      <div class="about-copy">
+        <p class="eyebrow">About us</p>
+        <h2>A kirana shop you can trust</h2>
+        <p class="sub">Karayana Hub keeps the daily essentials of a home in one place, from atta and oil to biscuits, soap and cleaners. We built this site so you can check what we stock before you step out.</p>
+        <ul class="ticks">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Genuine, branded products on every shelf</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Fair prices, confirmed before you pick up</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Friendly help finding what you need</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Simple enquiries by WhatsApp or phone</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap contact">
+      <div class="contact-info">
+        <p class="eyebrow">Step 2</p>
+        <h2>Contact and enquiry</h2>
+        <p class="sub">Send your list, or just ask about an item. We usually reply with availability and price.</p>
+        <ul class="info" id="info"></ul>
+        <p class="info-empty" id="infoEmpty" hidden>Shop address, phone and timings will appear here once added.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="f" novalidate>
+          <h3>Your enquiry</h3>
+
+          <div class="list-sum" id="sum"></div>
+
+          <div class="field">
+            <label for="n">Your name</label>
+            <input id="n" name="name" autocomplete="name" required aria-describedby="en">
+            <span class="err" id="en" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="p">Phone number</label>
+            <input id="p" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" required aria-describedby="ep">
+            <span class="err" id="ep" role="alert"></span>
+          </div>
+
+          <fieldset class="seg">
+            <legend>How would you like to get it?</legend>
+            <label><input type="radio" name="mode" value="Pickup" checked><span>Pickup from shop</span></label>
+            <label><input type="radio" name="mode" value="Delivery"><span>Home delivery</span></label>
+          </fieldset>
+
+          <div class="field" id="adWrap" hidden>
+            <label for="a">Delivery address</label>
+            <textarea id="a" name="address" rows="2" autocomplete="street-address" aria-describedby="ea"></textarea>
+            <span class="err" id="ea" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="it" id="itLabel">Anything else? <small>(optional)</small></label>
+            <textarea id="it" name="notes" rows="3" placeholder="Brand, size, quantity or any question" aria-describedby="ei"></textarea>
+            <span class="err" id="ei" role="alert"></span>
+          </div>
+
+          <button class="btn btn-wa btn-lg block" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span id="sendText">Send enquiry on WhatsApp</span></button>
+
+          <div class="out" id="out" hidden tabindex="-1">
+            <p class="out-title"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span id="outTitle">Your enquiry is ready</span></p>
+            <pre id="outMsg"></pre>
+            <div class="out-actions">
+              <a class="btn btn-primary" id="outWa" target="_blank" rel="noopener" hidden>Open WhatsApp</a>
+              <button class="btn btn-ghost" type="button" id="cp"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg><span>Copy enquiry</span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <a class="logo" href="#top" aria-label="Back to top"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M12 9v22M12 20l10-11M12 20l11 11" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="30" cy="12" r="3.2" fill="#f2b705"/></svg><span>Karayana Hub</span></a>
+      <p>Snacks, staples, tea, oils, toiletries and cleaning supplies.</p>
+    </div>
+    <nav aria-label="Footer"><a href="#shelves">Shelves</a><a href="#how">How it works</a><a href="#shop">Inside the shop</a><a href="#contact">Contact</a></nav>
+  </div>
+  <div class="wrap legal">Cloud Computing project by Amandeep Singh, Punjab College of Technical Education, Ludhiana.</div>
+</footer>
+
+<!-- Sticky list bar (mobile) -->
+<div class="listbar" id="listbar" hidden>
+  <button type="button" id="listbarBtn"><span><b id="lbCount">0 items</b> in your list</span><span class="lb-go">View list <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></button>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- List drawer -->
+<dialog id="dr" class="drawer" aria-labelledby="drTitle">
+  <div class="dr-in">
+    <div class="dr-head"><h2 id="drTitle">My list</h2><button class="icon-btn" id="drClose" type="button" aria-label="Close list"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+    <div class="dr-body" id="ls"></div>
+    <div class="dr-foot" id="drFoot"></div>
+  </div>
+</dialog>
+
+<!-- Lightbox -->
+<dialog id="lb" class="lightbox" aria-label="Photo viewer">
+  <figure>
+    <img id="lbi" alt="">
+    <figcaption><span id="lbc"></span><span id="lbn" class="lbn"></span></figcaption>
+  </figure>
+  <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Close photo"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Previous photo"><svg class="ic" aria-hidden="true"><use href="#i-left"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Next photo"><svg class="ic" aria-hidden="true"><use href="#i-right"/></svg></button>
+</dialog>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
